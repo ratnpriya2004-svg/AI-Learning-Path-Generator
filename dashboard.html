@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Learn - Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+   <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>AI Learn</span>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-link active">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-road"></i>
+
+                <span>My Roadmap</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>My Tasks</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Progress</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <span>AI Mentor</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="nav-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Back to Home</span>
+
+            </a>
+
+
+            <a href="php/logout.php" class="nav-link logout-link">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP NAVBAR -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <h1>Dashboard</h1>
+
+                <p>Track your learning journey and stay consistent.</p>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="profile">
+
+                    <img src="assets/images/user.png" alt="User">
+
+                    <div class="profile-info">
+
+                        <strong>Student</strong>
+
+                        <span>Learner</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="welcome-card">
+
+            <div class="welcome-content">
+
+                <span>🚀 Keep Learning</span>
+
+                <h2>Welcome back, Learner!</h2>
+
+                <p>
+                    Continue your learning journey and complete
+                    today's goals to keep your streak alive.
+                </p>
+
+                <a href="#" class="dashboard-btn">
+
+                    Continue Learning
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="welcome-icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OVERVIEW ================= -->
+
+        <section class="overview-section">
+
+            <div class="section-heading">
+
+                <h2>Learning Overview</h2>
+
+                <span>This Week</span>
+
+            </div>
+
+
+            <div class="overview-grid">
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon purple">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Learning Hours</span>
+
+                        <h3>12.5 hrs</h3>
+
+                        <small>+15% this week</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon blue">
+
+                        <i class="fa-solid fa-fire"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Learning Streak</span>
+
+                        <h3>12 Days</h3>
+
+                        <small>Keep it going 🔥</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Completed Tasks</span>
+
+                        <h3>48</h3>
+
+                        <small>8 this week</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon orange">
+
+                        <i class="fa-solid fa-chart-simple"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Overall Progress</span>
+
+                        <h3>75%</h3>
+
+                        <small>Great progress!</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROADMAP ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>Current Learning Roadmap</h2>
+
+                <a href="#">View All</a>
+
+            </div>
+
+
+            <div class="roadmap-dashboard-card">
+
+
+                <div class="roadmap-top">
+
+                    <div>
+
+                        <span class="roadmap-label">CURRENT PATH</span>
+
+                        <h3>Web Development</h3>
+
+                        <p>HTML, CSS, JavaScript & React</p>
+
+                    </div>
+
+                    <div class="roadmap-percent">
+
+                        75%
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-progress">
+
+                    <div class="dashboard-progress-fill"></div>
+
+                </div>
+
+
+                <div class="roadmap-info">
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        15 of 20 modules completed
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        25 days remaining
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-steps">
+
+                    <div class="roadmap-step completed">
+
+                        <span>1</span>
+
+                        <p>HTML & CSS</p>
+
+                    </div>
+
+
+                    <div class="roadmap-step completed">
+
+                        <span>2</span>
+
+                        <p>JavaScript</p>
+
+                    </div>
+
+
+                    <div class="roadmap-step active">
+
+                        <span>3</span>
+
+                        <p>React</p>
+
+                    </div>
+
+
+                    <div class="roadmap-step">
+
+                        <span>4</span>
+
+                        <p>Projects</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM GRID ================= -->
+
+        <div class="dashboard-bottom-grid">
+
+
+            <!-- TODAY'S TASKS -->
+
+            <section class="dashboard-section tasks-section">
+
+                <div class="section-heading">
+
+                    <h2>Today's Tasks</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <div class="task-list">
+
+
+                    <div class="task-item">
+
+                        <div class="task-check">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+                        <div class="task-content">
+
+                            <h4>Complete CSS Flexbox</h4>
+
+                            <span>30 Minutes</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="task-item">
+
+                        <div class="task-check">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+                        <div class="task-content">
+
+                            <h4>Practice JavaScript</h4>
+
+                            <span>45 Minutes</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="task-item">
+
+                        <div class="task-check">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+                        <div class="task-content">
+
+                            <h4>Build Mini Project</h4>
+
+                            <span>1 Hour</span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- AI RECOMMENDATION -->
+
+            <section class="dashboard-section ai-recommendation">
+
+                <div class="section-heading">
+
+                    <h2>AI Recommendation</h2>
+
+                </div>
+
+
+                <div class="ai-card">
+
+                    <div class="ai-icon">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <h3>What should you learn next?</h3>
+
+                    <p>
+                        Based on your current progress,
+                        we recommend completing JavaScript
+                        DOM manipulation before starting React.
+                    </p>
+
+                    <a href="#" class="ai-btn">
+
+                        View Recommendation
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="dashboard-footer">
+
+            <p>
+                © 2026 AI Learn. All Rights Reserved.
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- Dashboard JavaScript -->
+    <script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | AI Learning Path Generator</title>
+
+    <link rel="stylesheet" href="assets/css/auth.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <!-- Left Side -->
+
+        <div class="left-panel">
+
+            <h1>Start Your AI Journey 🚀</h1>
+
+            <p>
+
+                Create your account and let AI build a personalized
+                learning roadmap based on your goals.
+
+            </p>
+
+            <img src="assets/images/register.png" alt="Register">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="right-panel">
+
+            <form action="php/register.php" method="POST">
+
+                <h2>Create Account</h2>
+
+                <div class="input-box">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Create password"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Confirm Password</label>
+
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        placeholder="Confirm password"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Current Skill Level</label>
+
+                    <select name="skill_level" required>
+
+                        <option value="">Select Level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Learning Goal</label>
+
+                    <input
+                        type="text"
+                        name="goal"
+                        placeholder="Example: Web Development">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Daily Study Time</label>
+
+                    <select name="study_time">
+
+                        <option>30 Minutes</option>
+                        <option>1 Hour</option>
+                        <option>2 Hours</option>
+                        <option>3+ Hours</option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit">
+
+                    Create Account
+
+                </button>
+
+                <p>
+
+                    Already have an account?
+
+                    <a href="login.html">
+
+                        Login
+
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
